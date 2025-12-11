@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Understanding the Brain Through Single-Cell and Multi-Omics AI</title>
+
+    <!-- Bootstrap + Fonts -->
+    <link href="../dist/css/styles.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700"
+      rel="stylesheet"
+    />
+
+    <!-- MathJax -->
+    <script>
+      MathJax = {
+        tex: { inlineMath: [["\\(", "\\)"]], displayMath: [["\\[", "\\]"]] },
+        svg: { fontCache: "global" },
+      };
+    </script>
+    <script
+      async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+    ></script>
+
+    <style>
+      body {
+        font-family: "Muli", sans-serif;
+        line-height: 1.7;
+        background-color: #fff;
+        color: #222;
+        padding: 3rem 12%;
+      }
+
+      h1 {
+        color: #000;
+        font-weight: 800;
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+        text-transform: uppercase;
+      }
+
+      h2 {
+        color: #000;
+        font-weight: 700;
+        font-size: 1.3rem;
+        margin-top: 2rem;
+      }
+
+      p {
+        text-align: justify;
+        margin-bottom: 1.2rem;
+      }
+
+      .back-btn {
+        display: inline-block;
+        margin-bottom: 1.5rem;
+        background-color: #000;
+        color: #fff;
+        padding: 8px 16px;
+        border-radius: 5px;
+        font-weight: 600;
+        text-decoration: none;
+        transition: 0.3s;
+      }
+
+      .back-btn:hover {
+        background-color: #6c63ff;
+        color: #fff;
+      }
+
+      .date {
+        color: #666;
+        font-size: 0.95rem;
+        margin-bottom: 1rem;
+      }
+
+      .highlight-box {
+        background-color: #f8f8f8;
+        border-left: 4px solid #6c63ff;
+        padding: 10px 15px;
+        border-radius: 5px;
+        margin: 1.2rem 0;
+      }
+
+      .figure {
+        text-align: center;
+        margin: 2rem 0;
+      }
+
+      .figure img {
+        width: 70%;
+        border-radius: 8px;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+      }
+
+      .figure-caption {
+        font-size: 0.9rem;
+        color: #555;
+        margin-top: 8px;
+        font-style: italic;
+      }
+
+      .signature {
+        font-style: italic;
+        color: #444;
+        margin-top: 2rem;
+      }
+
+      hr {
+        border: none;
+        border-top: 1.5px solid #eee;
+        margin: 2rem 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <a href="../index.html#research-blog" class="back-btn">← Back to Research</a>
+
+    <h1>Understanding the Brain Through Single-Cell and Multi-Omics AI</h1>
+    <p class="date">Published: December 2025 | Author: Maryam Rahimi Movassagh</p>
+
+    <p>
+      Neuroscience is undergoing a data revolution. For the first time in history,
+      we can measure the brain not only at the systems level—through MRI and EEG—
+      but also at the molecular level, through <strong>single-cell sequencing</strong>,
+      <strong>multi-omics profiling</strong>, and <strong>spatial transcriptomics</strong>.
+      Yet with this abundance of data comes a challenge: 
+      how do we connect what happens inside individual cells to large-scale brain
+      function and neurological disorders?
+    </p>
+
+    <p>
+      My Ph.D. research focuses on building <strong>interpretable AI frameworks</strong>
+      that bridge molecular-level signals with systems-level behavior. By integrating 
+      <strong>single-cell data, transcriptomics, and neuroimaging</strong> into unified 
+      computational models, I aim to uncover early biomarkers and mechanistic patterns
+      underlying conditions such as ALS, epilepsy, and Alzheimer's disease.
+    </p>
+
+    <div class="highlight-box">
+      Modern neuroscience requires models that do more than predict.  
+      They must <strong>explain</strong>—revealing how cellular and molecular changes
+      cascade into cognitive and behavioral outcomes.
+    </div>
+
+    <h2>Why Single-Cell and Multi-Omics Matter</h2>
+    <p>
+      Traditional genomic studies treat tissues as homogeneous, averaging signals across 
+      thousands of cells. Single-cell technologies flip this assumption by allowing us to 
+      see what each cell is doing individually—its gene expression, its state, and its 
+      developmental trajectory.
+    </p>
+
+    <p>
+      When combined with <strong>proteomics, epigenomics, metabolomics</strong>, and
+      <strong>brain imaging</strong>, these datasets give us a panoramic view of the
+      nervous system. But such high-dimensional data require AI systems that can:
+    </p>
+
+    <ul>
+      <li>Model interactions across biological scales</li>
+      <li>Detect subtle molecular signatures of disease</li>
+      <li>Infer causal relationships rather than correlations</li>
+      <li>Remain interpretable for clinicians and neuroscientists</li>
+    </ul>
+
+    <div class="figure">
+      <img src="../dist/assets/img/multiomics_brain.drawio.png" alt="Brain Multi-Omics Model" />
+      <p class="figure-caption">
+        Figure: Multi-omics and imaging provide complementary layers of brain information,
+        from genes to circuits to cognition.
+      </p>
+    </div>
+
+    <h2>Building Interpretable AI for Neuroscience</h2>
+    <p>
+      In my work, I design AI systems that merge
+      <strong>graph neural networks</strong>,
+      <strong>foundation models</strong>,
+      and <strong>probabilistic reasoning</strong>
+      to represent the brain as both a molecular and functional network.
+    </p>
+
+    <p>
+      These models learn from:
+    </p>
+
+    <ul>
+      <li>Single-cell transcriptomes</li>
+      <li>Spatial gene-expression gradients</li>
+      <li>EEG and fMRI dynamics</li>
+      <li>Clinical progression patterns</li>
+    </ul>
+
+    <p>
+      The ultimate goal is to create systems that can answer questions such as:
+    </p>
+
+    <div class="highlight-box">
+      <em>“Which gene-expression patterns predict the transition from healthy neural 
+      activity to early disease states?”</em>
+    </div>
+
+    <p>
+      These insights could support earlier diagnosis, help evaluate treatment effectiveness,
+      and guide biomedical discovery toward more personalized interventions.
+    </p>
+
+    <h2>Why This Research Matters</h2>
+    <p>
+      Neurological disorders remain some of the least understood and most challenging diseases 
+      in medicine. By connecting molecular omics with systems-level brain function through 
+      interpretable AI, we move closer to:
+    </p>
+
+    <ul>
+      <li>Early detection of neurodegenerative diseases</li>
+      <li>Targeted therapeutic strategies</li>
+      <li>Better understanding of cognitive decline</li>
+      <li>Precision medicine tailored to individuals</li>
+    </ul>
+
+    <p>
+      As neuroscience becomes increasingly multi-modal, the need for transparent, trustworthy, 
+      and biologically grounded AI will only grow. My research aims to contribute to this shift— 
+      building computational tools that help decode the brain not as a single system, but as 
+      an interconnected biological universe.
+    </p>
+
+    <hr />
+    <p class="signature">
+      From: <strong>Maryam Rahimi Movassagh</strong><br />
+      Ph.D. Student, University of Central Florida (UCF)
+    </p>
+  </body>
+</html>
